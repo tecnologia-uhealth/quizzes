@@ -395,8 +395,7 @@ function showResult(){
   $('resTitle').textContent=state.seg==='family'?t.titleFamily:t.titleSelf;
   $('resBody').textContent=t.body;
   $('resCta').textContent=t.cta;
-  $('resCta').href='https://anual.saludu.com/shop/anual-preventivo-23?utm_source=quiz&utm_medium=result&utm_campaign=diagnostico&utm_content='+state.tier+'-'+state.seg+'-'+state.score;
-
+  $('resCta').href='https://anual.saludu.com/shop/anual-preventivo-23?utm_source=quiz&utm_medium=result&utm_campaign=diagnostico&utm_content='+state.tier+'-'+state.seg+'-'+state.score+'#product_name_children';
   const spend=state.spend,save=Math.max(0,spend-PLAN_PRICE);
   const pct=spend>0?Math.round(save/spend*100):0,maxBar=Math.max(spend,PLAN_PRICE);
   $('spendAmt').textContent=fmt(spend);
